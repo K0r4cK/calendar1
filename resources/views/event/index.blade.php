@@ -20,9 +20,12 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
             </div>
-            
+
             <div class="modal-body">
                 <form action="">
+
+                {!!csrf_field()!!}
+
                 <div class="form-group">
                     <label for="id">ID</label>
                     <input type="text" class="form-control" name="id" id="id" aria-describedby="helpId" placeholder="">
@@ -54,7 +57,7 @@
                     <input type="text" class="form-control" name="applicant" id="applicant" aria-describedby="helpId" placeholder="">
                     <small id="helpId" class="form-text text-muted">Help text</small>
                 </div>
-                
+
 <!--hora-->
                 <div class="form-group">
                     <label for="crime">Delito</label>
@@ -92,7 +95,7 @@
                     <button type="button" class="btn btn-dark" id="btnDelete">Eliminar</button>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
-            </form> 
+            </form>
         </div>
     </div>
 </div>
